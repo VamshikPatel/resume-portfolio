@@ -3,84 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #555;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-    </style>
+    <title>Vamshik Patel - Resume Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Professional Title | Location</p>
-        <p>Email: your.email@example.com | Phone: (555) 123-4567</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="name">
+        <h1>Vamshik Patel</h1>
+        <p class="role">Software Developer | Full Stack Engineer</p>
+        <p class="location">Location: India</p>
     </header>
 
     <main>
         <section id="about">
-            <h2>About</h2>
-            <p>Brief professional summary highlighting your key strengths and career objectives.</p>
+            <h2>About Me</h2>
+            <p class="summary">Passionate software developer with expertise in full-stack development, problem-solving, and creating innovative solutions. Experienced in modern web technologies and committed to writing clean, efficient code.</p>
         </section>
 
         <section id="experience">
-            <h2>Experience</h2>
-            <div>
-                <h3>Job Title - Company Name</h3>
-                <p><em>Date Range</em></p>
+            <h2>Professional Experience</h2>
+            <article class="job">
+                <h3>Software Developer - Tech Company</h3>
+                <p class="date-range"><em>2023 - Present</em></p>
                 <ul>
-                    <li>Key achievement or responsibility</li>
-                    <li>Another important accomplishment</li>
+                    <li>Developed and maintained web applications using modern frameworks</li>
+                    <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
+                    <li>Implemented responsive designs and optimized application performance</li>
                 </ul>
-            </div>
+            </article>
+            <article class="job">
+                <h3>Junior Developer - Startup Inc</h3>
+                <p class="date-range"><em>2022 - 2023</em></p>
+                <ul>
+                    <li>Built user interfaces using HTML, CSS, and JavaScript</li>
+                    <li>Participated in code reviews and agile development processes</li>
+                    <li>Contributed to API development and database design</li>
+                </ul>
+            </article>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <div>
-                <h3>Project Name</h3>
-                <p>Brief description of the project and technologies used.</p>
-            </div>
+            <h2>Featured Projects</h2>
+            <article class="project">
+                <h3><a href="#" target="_blank">Resume Portfolio Website</a></h3>
+                <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript to showcase professional experience and projects.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Git</p>
+            </article>
+            <article class="project">
+                <h3><a href="#" target="_blank">Task Management App</a></h3>
+                <p>A full-stack web application for managing tasks and projects with user authentication and real-time updates.</p>
+                <p><strong>Technologies:</strong> React, Node.js, MongoDB, Express</p>
+            </article>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: JavaScript, Python, HTML/CSS</li>
-                <li>Frameworks: React, Node.js</li>
-                <li>Tools: Git, VS Code</li>
-            </ul>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Python</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Frameworks & Libraries</h4>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Technologies</h4>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>MongoDB</li>
+                        <li>RESTful APIs</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: linkedin.com/in/yourprofile</p>
-            <p>GitHub: github.com/yourusername</p>
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:vamshik.patel@email.com">vamshik.patel@email.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vamshikpatel" target="_blank">linkedin.com/in/vamshikpatel</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/VamshikPatel" target="_blank">github.com/VamshikPatel</a></p>
+                <p><strong>Portfolio:</strong> <a href="#" target="_blank">vamshikpatel.dev</a></p>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Vamshik Patel. All rights reserved.</p>
+    </footer>
 </body>
 </html>
